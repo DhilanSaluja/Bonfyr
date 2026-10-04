@@ -1,6 +1,6 @@
 import { Component, type ReactNode } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { colors, radii, spacing, typography } from '@/constants/theme';
+import { colors, spacing, typography } from '@/constants/theme';
 
 type Props = { children: ReactNode; onError?: () => void };
 type State = { hasError: boolean };

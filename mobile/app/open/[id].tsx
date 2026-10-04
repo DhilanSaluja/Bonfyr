@@ -16,7 +16,7 @@ import { supabase } from '@/lib/supabase';
 import { joinOpen, leaveOpen, recordOpenView, endOpen } from '@/lib/api';
 import { useAuth } from '@/lib/auth-context';
 import { blockUser, reportContent } from '@/lib/moderation';
-import { formatCountdown } from '@/lib/utils';
+import { formatCountdown , debounce } from '@/lib/utils';
 import type { Open } from '@/lib/types';
 import { spacing, typography, radii, type ThemeColors } from '@/constants/theme';
 import { useThemedStyles } from '@/lib/theme-context';
@@ -32,13 +32,13 @@ import {
 } from '@/components/ui';
 import { ChevronRightIcon, FlameIcon } from '@/components/icons';
 import { DetailSkeleton } from '@/components/Skeleton';
-import { debounce } from '@/lib/utils';
+
 import { safeBack, useCloseOverlaysOnBack, useLockBackGesture } from '@/lib/nav';
 
 export default function OpenDetailScreen() {
   const { colors, styles } = useThemedStyles(makeStyles);
   const { id } = useLocalSearchParams<{ id: string }>();
-  const { user, profile } = useAuth();
+  const { user } = useAuth();
   const router = useRouter();
   const [open, setOpen] = useState<Open | null>(null);
   const [countdown, setCountdown] = useState('');
@@ -232,8 +232,8 @@ export default function OpenDetailScreen() {
 
   return (
     <SafeAreaView style={styles.safe} edges={['top']}>
+      <ScreenHeader title="Spark" onBack={goBack} />
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
-        <ScreenHeader title="Spark" onBack={goBack} />
 
         <Card style={[styles.hero, { borderColor: accent }]} elevated>
           <View style={styles.heroTop}>

@@ -39,7 +39,7 @@ const SECTIONS: { heading: string; body: string }[] = [
 ];
 
 export default function PrivacyScreen() {
-  const { colors, styles } = useThemedStyles(makeStyles);
+  const { styles } = useThemedStyles(makeStyles);
 
   return (
     <SafeAreaView style={styles.root} edges={['top', 'bottom']}>

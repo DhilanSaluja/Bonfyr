@@ -416,7 +416,24 @@ export default function CircleDetailScreen() {
 
   return (
     <SafeAreaView style={styles.safe}>
+      <ScreenHeader
+        title={circle.name}
+        onBack={goBack}
+        right={
+          <View>
+            <IconButton accessibilityLabel="Crew chat" onPress={openChat}>
+              <CommentIcon size={22} color={colors.charcoal} />
+            </IconButton>
+            {chatUnread > 0 ? (
+              <View style={styles.chatBadge} pointerEvents="none">
+                <Text style={styles.chatBadgeText}>{chatUnread > 9 ? '9+' : chatUnread}</Text>
+              </View>
+            ) : null}
+          </View>
+        }
+      />
       <ScrollView
+        style={styles.flex}
         contentContainerStyle={styles.scroll}
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
@@ -434,23 +451,6 @@ export default function CircleDetailScreen() {
           />
         }
       >
-        <ScreenHeader
-          title={circle.name}
-          onBack={goBack}
-          right={
-            <View>
-              <IconButton accessibilityLabel="Crew chat" onPress={openChat}>
-                <CommentIcon size={22} color={colors.charcoal} />
-              </IconButton>
-              {chatUnread > 0 ? (
-                <View style={styles.chatBadge} pointerEvents="none">
-                  <Text style={styles.chatBadgeText}>{chatUnread > 9 ? '9+' : chatUnread}</Text>
-                </View>
-              ) : null}
-            </View>
-          }
-        />
-
         <View style={fireOut ? styles.coldSurface : undefined}>
           <CrewFireRing
             fire={emptyFire}
@@ -734,6 +734,7 @@ export default function CircleDetailScreen() {
 function makeStyles(colors: ThemeColors) {
   return StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.paper },
+  flex: { flex: 1 },
   scroll: { paddingBottom: spacing.xxl },
   coldSurface: { opacity: 0.55 },
   featuresCold: { opacity: 0.32 },

@@ -47,7 +47,7 @@ export type VerifyResult =
 export type ProductSubscription = {
   id: string;
   displayPrice?: string;
-  subscriptionOffers?: Array<{ offerTokenAndroid?: string | null }>;
+  subscriptionOffers?: { offerTokenAndroid?: string | null }[];
 };
 
 export type Purchase = {

@@ -122,7 +122,6 @@ export default function SubscriptionScreen() {
 function SubscriptionFallback() {
   const { styles } = useThemedStyles(makeStyles);
   const { profile } = useAuth();
-  const router = useRouter();
   const [plan, setPlan] = useState<ProPlan>('monthly');
   const isPro = isActivePro(profile);
   return (

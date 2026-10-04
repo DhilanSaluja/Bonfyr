@@ -12,7 +12,7 @@ type Props = {
 
 /** Short directions shown once after a new account lands on Home. */
 export function FirstTipsSheet({ visible, onDone }: Props) {
-  const { colors, styles } = useThemedStyles(makeStyles);
+  const { styles } = useThemedStyles(makeStyles);
   const insets = useSafeAreaInsets();
 
   return (

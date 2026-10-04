@@ -90,6 +90,9 @@ export default function EditProfileScreen() {
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         keyboardVerticalOffset={Platform.OS === 'ios' ? 8 : 0}
       >
+        <View style={styles.headerBar}>
+          <ScreenHeader title="Edit profile" subtitle="How friends see you" />
+        </View>
         <ScrollView
           contentContainerStyle={styles.container}
           keyboardShouldPersistTaps="handled"
@@ -97,7 +100,6 @@ export default function EditProfileScreen() {
           automaticallyAdjustKeyboardInsets
           showsVerticalScrollIndicator={false}
         >
-        <ScreenHeader title="Edit profile" subtitle="How friends see you" />
 
         <Pressable style={styles.avatarWrap} onPress={pickAvatar} disabled={uploading}>
           <Avatar name={name || profile?.name} uri={avatarUrl} size={96} color={colors.lamp} />
@@ -153,7 +155,8 @@ export default function EditProfileScreen() {
 function makeStyles(colors: ThemeColors) {
   return StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.paper },
-  container: { padding: spacing.lg, paddingBottom: spacing.xxl },
+  headerBar: { paddingHorizontal: spacing.lg, paddingTop: spacing.lg },
+  container: { paddingHorizontal: spacing.lg, paddingBottom: spacing.xxl },
   avatarWrap: { alignItems: 'center', marginBottom: spacing.lg },
   avatarHint: { ...typography.caption, color: colors.lamp, marginTop: spacing.sm },
   card: {

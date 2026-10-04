@@ -83,6 +83,12 @@ export default function FindFriendsScreen() {
 
   return (
     <SafeAreaView style={styles.safe}>
+      <View style={styles.headerBar}>
+        <ScreenHeader
+          title="Find friends"
+          subtitle="People in your contacts who already have Bonfyr"
+        />
+      </View>
       <ScrollView
         contentContainerStyle={styles.container}
         keyboardShouldPersistTaps="handled"
@@ -90,10 +96,6 @@ export default function FindFriendsScreen() {
           <RefreshControl refreshing={loading} onRefresh={runSync} tintColor={colors.lamp} />
         }
       >
-        <ScreenHeader
-          title="Find friends"
-          subtitle="People in your contacts who already have Bonfyr"
-        />
 
         <Card style={styles.card} elevated>
           <Text style={styles.cardTitle}>Your phone number</Text>
@@ -193,7 +195,8 @@ export default function FindFriendsScreen() {
 function makeStyles(colors: ThemeColors) {
   return StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.paper },
-  container: { padding: spacing.md, paddingBottom: spacing.xxl },
+  headerBar: { paddingHorizontal: spacing.md, paddingTop: spacing.md },
+  container: { paddingHorizontal: spacing.md, paddingBottom: spacing.xxl },
   card: {
     marginBottom: spacing.md,
     padding: spacing.md,

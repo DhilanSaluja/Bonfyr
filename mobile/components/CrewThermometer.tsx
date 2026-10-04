@@ -94,7 +94,7 @@ function ThermoIcicles() {
 }
 
 export function CrewThermometer({ crewFires }: { crewFires: FireRow[] }) {
-  const { colors, styles, icy } = useThemedStyles(makeThermoStyles);
+  const { styles, icy } = useThemedStyles(makeThermoStyles);
   const heat = useMemo(() => crewHeatLevel(crewFires), [crewFires]);
   const hasCrews = crewFires.length > 0;
   const label = heatLabel(heat, hasCrews);

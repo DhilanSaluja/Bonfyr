@@ -1,4 +1,4 @@
-﻿import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   View,
   Text,
@@ -21,7 +21,7 @@ import { KindlePostCard } from '@/components/KindlePostCard';
 import { KindleSheet } from '@/components/KindleSheet';
 import { SettingsMenu } from '@/components/SettingsMenu';
 import { FireKeepersBanner, type FireKeeper } from '@/components/FireKeepersBanner';
-import { useCloseOverlaysOnBack, useLockBackGesture } from '@/lib/nav';
+import { useCloseOverlaysOnBack, useLockBackGesture , openCrew, openCrewChat, useNavGuard } from '@/lib/nav';
 import { useAuth } from '@/lib/auth-context';
 import { useFireChill } from '@/lib/fire-chill-context';
 import {
@@ -37,7 +37,7 @@ import {
 } from '@/lib/api';
 import { supabase } from '@/lib/supabase';
 import { isActivePro, type Open, type NotificationLog, type Circle, type CrewPost, type CrewFireStatus } from '@/lib/types';
-import { crewChatPreviewLine, formatChatListTime } from '@/lib/utils';
+import { crewChatPreviewLine, formatChatListTime , debounce } from '@/lib/utils';
 import { CrewThermometer } from '@/components/CrewThermometer';
 import { fireDyingLabel, hoursUntilFireDies, homeFireCardLayout } from '@/lib/fire';
 import { motion, radii, shadows, spacing, typography, withAlpha, type ThemeColors } from '@/constants/theme';
@@ -47,8 +47,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { FirstTipsSheet } from '@/components/FirstTipsSheet';
 import { FIRST_TIPS_STORAGE_KEY } from '@/constants/legal';
 import { getBlockedUserIds } from '@/lib/moderation';
-import { debounce } from '@/lib/utils';
-import { openCrew, openCrewChat, useNavGuard } from '@/lib/nav';
 import { takeShowLiveSparks } from '@/lib/home-focus';
 import { openNotificationLog } from '@/lib/notifications';
 import { DAILY_GOALS, goalForDate } from '@/constants/daily-goals';

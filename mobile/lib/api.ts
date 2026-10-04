@@ -1077,14 +1077,14 @@ export async function fetchCrewFiresForUser(
   userId: string,
   circles?: Circle[]
 ): Promise<
-  Array<{
+  {
     circle: Circle;
     fire: CrewFireStatus;
     members: {
       user_id: string;
       profile?: Pick<Profile, 'id' | 'name' | 'avatar_url' | 'status_text' | 'status_at' | 'subscription_tier'>;
     }[];
-  }>
+  }[]
 > {
   const list = circles ?? (await fetchUserCircles(userId));
   if (list.length === 0) return [];
@@ -1295,7 +1295,7 @@ export async function fetchCrewChatPreviews(
     p_circle_ids: list.map((c) => c.id),
   });
   if (!rpc.error) {
-    for (const row of (rpc.data ?? []) as Array<Latest & { circle_id: string }>) {
+    for (const row of (rpc.data ?? []) as (Latest & { circle_id: string })[]) {
       latestByCircle.set(row.circle_id, row);
     }
   } else {

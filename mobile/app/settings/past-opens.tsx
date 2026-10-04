@@ -11,7 +11,7 @@ import { useThemedStyles } from '@/lib/theme-context';
 import { ListSkeleton } from '@/components/Skeleton';
 
 export default function PastOpensScreen() {
-  const { colors, styles } = useThemedStyles(makeStyles);
+  const { styles } = useThemedStyles(makeStyles);
   const { user } = useAuth();
   const router = useRouter();
   const [opens, setOpens] = useState<Open[]>([]);
@@ -38,11 +38,13 @@ export default function PastOpensScreen() {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <ScrollView contentContainerStyle={styles.scroll}>
+      <View style={styles.headerBar}>
         <ScreenHeader
           title="Past Sparks"
           subtitle="Lights you've turned on"
         />
+      </View>
+      <ScrollView contentContainerStyle={styles.scroll}>
 
         {loading ? (
           <ListSkeleton rows={4} />
@@ -81,7 +83,8 @@ export default function PastOpensScreen() {
 function makeStyles(colors: ThemeColors) {
   return StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.paper },
-  scroll: { padding: spacing.lg },
+  headerBar: { paddingHorizontal: spacing.lg, paddingTop: spacing.lg },
+  scroll: { paddingHorizontal: spacing.lg, paddingBottom: spacing.lg },
   card: {
     marginBottom: spacing.sm,
     padding: spacing.md,

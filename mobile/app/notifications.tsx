@@ -11,7 +11,7 @@ import { EmptyState, ListRow, ScreenHeader } from '@/components/ui';
 import { ListSkeleton } from '@/components/Skeleton';
 
 export default function NotificationsScreen() {
-  const { colors, styles } = useThemedStyles(makeStyles);
+  const { styles } = useThemedStyles(makeStyles);
   const { user } = useAuth();
   const [notifications, setNotifications] = useState<NotificationLog[]>([]);
   const [loading, setLoading] = useState(true);
@@ -41,11 +41,13 @@ export default function NotificationsScreen() {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <ScrollView contentContainerStyle={styles.scroll}>
+      <View style={styles.headerBar}>
         <ScreenHeader
           title="Notifications"
           subtitle="Sparks, chats, photos, reactions, and fire updates"
         />
+      </View>
+      <ScrollView contentContainerStyle={styles.scroll}>
 
         {loading ? (
           <ListSkeleton rows={5} />
@@ -77,7 +79,8 @@ export default function NotificationsScreen() {
 function makeStyles(colors: ThemeColors) {
   return StyleSheet.create({
     safe: { flex: 1, backgroundColor: colors.paper },
-    scroll: { padding: spacing.lg },
+    headerBar: { paddingHorizontal: spacing.lg, paddingTop: spacing.lg },
+  scroll: { paddingHorizontal: spacing.lg, paddingBottom: spacing.lg },
     dot: {
       width: 8,
       height: 8,

@@ -96,8 +96,8 @@ export default function UserProfileScreen() {
 
   return (
     <SafeAreaView style={styles.safe} edges={['top']}>
+      <ScreenHeader title="Profile" onBack={goBack} />
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
-        <ScreenHeader title="Profile" onBack={goBack} />
 
         <View style={styles.hero}>
           <View style={[styles.avatarRing, { borderColor: colors.lamp }]}>

@@ -264,7 +264,7 @@ export default function CreateOpenScreen() {
       safeBack(router);
     } catch (e) {
       const msg = (e as Error).message ?? '';
-      if (/requires (Bonfyr|Bonfire) Pro|Upgrade to Pro for 24/i.test(msg)) {
+      if (/requires Bonfyr Pro|Upgrade to Pro for 24/i.test(msg)) {
         setProOpen(true);
       } else {
         Alert.alert('Error', msg || 'Could not create Spark.');
@@ -281,6 +281,14 @@ export default function CreateOpenScreen() {
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         keyboardVerticalOffset={Platform.OS === 'ios' ? 8 : 0}
       >
+        <View style={styles.headerBar}>
+          <ScreenHeader
+            title="Start a Spark"
+            subtitle="You can keep several Sparks live at once"
+            onBack={() => safeBack(router)}
+            right={<FlameIcon size={28} lit />}
+          />
+        </View>
         <ScrollView
           contentContainerStyle={styles.scroll}
           keyboardShouldPersistTaps="handled"
@@ -288,12 +296,6 @@ export default function CreateOpenScreen() {
           automaticallyAdjustKeyboardInsets
           showsVerticalScrollIndicator={false}
         >
-          <ScreenHeader
-            title="Start a Spark"
-            subtitle="You can keep several Sparks live at once"
-            onBack={() => safeBack(router)}
-            right={<FlameIcon size={28} lit />}
-          />
 
           <Field
             placeholder="Studying… Late night drive… Coffee at Starbucks…"
@@ -448,7 +450,8 @@ export default function CreateOpenScreen() {
 function makeStyles(colors: ThemeColors) {
   return StyleSheet.create({
     safe: { flex: 1, backgroundColor: colors.paper },
-    scroll: { width: '100%', paddingHorizontal: '6%', paddingBottom: spacing.xxl },
+    headerBar: { width: '100%', paddingHorizontal: '6%' },
+  scroll: { width: '100%', paddingHorizontal: '6%', paddingBottom: spacing.xxl },
     counter: {
       ...typography.caption,
       color: colors.charcoalMuted,

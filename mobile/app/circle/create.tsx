@@ -91,15 +91,17 @@ export default function CreateCircleScreen() {
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         keyboardVerticalOffset={Platform.OS === 'ios' ? 8 : 0}
       >
+        <View style={styles.headerBar}>
+          <ScreenHeader
+            title="New Crew"
+            subtitle="You'll invite people after it's created"
+          />
+        </View>
         <ScrollView
           contentContainerStyle={styles.scroll}
           keyboardShouldPersistTaps="handled"
           showsVerticalScrollIndicator={false}
         >
-          <ScreenHeader
-            title="New Crew"
-            subtitle="You'll invite people after it's created"
-          />
 
           <Pressable
             style={({ pressed }) => [styles.identity, pressed && styles.pressed]}
@@ -183,6 +185,7 @@ function makeStyles(colors: ThemeColors) {
   return StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.paper },
   flex: { flex: 1 },
+  headerBar: { width: '100%', paddingHorizontal: '6%' },
   scroll: {
     width: '100%',
     paddingHorizontal: '6%',
