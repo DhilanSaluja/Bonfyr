@@ -1,0 +1,119 @@
+{
+  "expo": {
+    "name": "Bonfyr",
+    "slug": "bonfire",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "scheme": "bonfire",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF6EB"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "requireFullScreen": false,
+      "bundleIdentifier": "app.bonfire.ios",
+      "buildNumber": "1",
+      "usesAppleSignIn": true,
+      "entitlements": {
+        "com.apple.developer.applesignin": ["Default"],
+        "aps-environment": "production"
+      },
+      "infoPlist": {
+        "NSContactsUsageDescription": "Bonfyr uses your contacts to find friends already on the app and invite others. Contact data stays on your device except for phone hashes used to match registered users.",
+        "NSLocationWhenInUseUsageDescription": "Bonfyr uses your location only when you choose to share a meetup spot with a Spark.",
+        "NSPhotoLibraryUsageDescription": "Bonfyr needs photo library access so you can set a profile picture, choose a Crew photo, and post photos or short videos to keep a fire lit.",
+        "NSCameraUsageDescription": "Bonfyr can use the camera when you take a photo or video for your profile or Crew.",
+        "NSMicrophoneUsageDescription": "Bonfyr needs the microphone when you record a video to post.",
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIBackgroundModes": ["remote-notification"]
+      }
+    },
+    "android": {
+      "package": "com.bonfire.app",
+      "softwareKeyboardLayoutMode": "resize",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFF6EB"
+      },
+      "permissions": [
+        "READ_CONTACTS",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "POST_NOTIFICATIONS",
+        "CAMERA",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFF6EB",
+          "image": "./assets/splash.png",
+          "imageWidth": 240,
+          "resizeMode": "contain"
+        }
+      ],
+      "expo-router",
+      "expo-font",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#E06A3A",
+          "defaultChannel": "opens",
+          "mode": "production",
+          "enableBackgroundRemoteNotifications": true
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Bonfyr uses contacts to find friends and send invites."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Bonfyr uses your location when you choose to share a meetup spot with a Spark."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Bonfyr needs photo library access so you can set a profile picture, choose a Crew photo, and post photos or short videos to keep a fire lit.",
+          "cameraPermission": "Bonfyr uses the camera so you can take a photo for your profile, a Crew, chat, or a fire without leaving the app."
+        }
+      ],
+      "expo-iap",
+      "expo-apple-authentication",
+      "expo-video"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "62d06051-0aa2-43d4-aa2a-a0c967239924"
+      },
+      "supportEmail": "dhilan.saluja@gmail.com",
+      "privacyPolicyUrl": "https://nszrdmnteckgukyobzfp.supabase.co/functions/v1/legal/privacy",
+      "termsUrl": "https://nszrdmnteckgukyobzfp.supabase.co/functions/v1/legal/terms"
+    },
+    "owner": "dhilans"
+  }
+}

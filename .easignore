@@ -1,0 +1,17 @@
+mobile/android
+mobile/android/**
+mobile/ios
+mobile/ios/**
+mobile/store
+mobile/store/**
+mobile/node_modules
+mobile/node_modules/**
+mobile/.venv
+mobile/.venv/**
+mobile/dist
+mobile/.expo
+supabase
+**/.git
+**/.cxx
+**/.gradle
+**/build

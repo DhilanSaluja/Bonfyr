@@ -1,0 +1,187 @@
+Bonfyr — App Store Connect paste pack
+======================================
+App: Bonfyr
+Bundle ID: app.bonfire.ios
+Apple ID: 6801637684
+Support: dhilan.saluja@gmail.com
+Version: 1.0.0
+Use the latest iOS build that includes your TestFlight-tested binary.
+If you still want the comment/keyboard + invite-link + Live Sparks fixes,
+submit a NEW production build after those land, then pick that build.
+
+============================================================
+1) APP INFORMATION
+============================================================
+Name: Bonfyr
+Subtitle (30 chars max):
+Keep your crew together
+
+Promotional text (170 chars, optional):
+Light a Spark, pull your friends together, and keep the crew fire burning with photos and chat that fade after a day.
+
+============================================================
+2) DESCRIPTION (paste into Description)
+============================================================
+Bonfyr is THE app that keeps you and your friends together.
+
+Every 24 hours, someone in your crew has to post a picture or video, chat, or start a Spark (a hangout that actually happens in real life). If nobody kindles, the fire goes out. That’s the point — it stays about right now, not a feed you never catch up on.
+
+Start a Spark when you want to do something. Your crews get pinged so people can jump in. Keep the fire lit with photos, short videos, and chat that burn out after a day.
+
+Free
+• Create crews and invite friends with a code
+• Start Sparks that go live now
+• Photos, videos, GIFs, polls, and crew chat
+• Find friends already on Bonfyr from your contacts
+
+Bonfyr Pro (auto-renewable, $1.99/mo or $19.99/yr)
+• Unlimited crews (Free is capped at 5)
+• Schedule Sparks up to 24 hours ahead
+• Pro badge on your profile
+
+Sign in with Apple or Google. No public discovery feed — you only see people in your crews.
+
+Privacy Policy and Terms are in the app under You → Privacy / Terms. Delete your account anytime under You → Delete account.
+
+============================================================
+3) KEYWORDS (100 characters max, comma-separated, no spaces after commas is fine)
+============================================================
+friends,hangout,hangouts,plans,meetup,group chat,photos,video,chat,invite,spark,private,groups,irl
+
+============================================================
+4) WHAT'S NEW (for 1.0.0 first release you can skip, or use:)
+============================================================
+Welcome to Bonfyr. Light a Spark, keep your crew fire going, and hang out in real life.
+
+============================================================
+5) CATEGORY / AGE
+============================================================
+Primary category: Social Networking
+Secondary (optional): Lifestyle
+Age rating: 12+ (User-Generated Content, Infrequent/Mild Mature/Suggestive Themes if asked)
+Made for Kids: No
+Bonfyr is not directed at children under 13.
+
+Content rights: You own the app / you have rights to the content.
+
+============================================================
+6) PRIVACY — App Privacy (nutrition label)
+============================================================
+Data collected, used for App Functionality unless noted:
+
+Contact Info
+• Email Address (Sign in with Apple/Google) — not used for tracking
+• Phone Number (optional, hashed for Find Friends) — not used for tracking
+• Name
+
+User Content
+• Photos or Videos
+• Other User Content (chat, captions, Sparks, bio)
+
+Identifiers
+• User ID
+
+Location
+• Precise / Coarse Location — only when the user chooses to share a meetup pin on a Spark. Not collected in background.
+
+Diagnostics (optional / if Expo/Apple crash data is on)
+• Crash Data, Performance Data
+
+Contacts
+• Contacts — used on-device to match friends. Only hashed phone numbers are sent to the server. Not used for tracking.
+
+Purchases
+• Purchase History (Bonfyr Pro)
+
+Tracking: No. Do not check “Used for Tracking”.
+Do we sell data: No.
+
+Privacy Policy URL:
+https://bonfireconnect.netlify.app/
+Support URL:
+https://bonfireconnect.netlify.app/support.html
+Terms URL:
+https://bonfireconnect.netlify.app/terms.html
+In-app fallback: You → Privacy / Terms
+
+============================================================
+7) APP REVIEW INFORMATION — Notes (paste into Review Notes)
+============================================================
+Sign in: no username/password. Use Sign in with Apple (preferred).
+
+Sign in with Apple uses the name and email from Authentication Services. The app does not ask you to type those again.
+
+1. Launch Bonfyr → Sign in
+2. Tap Sign in with Apple
+3. Hide My Email is fine
+4. On the optional setup screen, tap Continue. Photo and phone are optional.
+5. Contacts, location, and notifications are requested later only if you use those features. Deny is fine — the app still works.
+
+Any new Apple ID can create a fresh profile. No demo password.
+
+Subscriptions (attach both IAPs to this version):
+• bonfire.pro.monthly
+• bonfire_pro_yearly
+Find them: Home → Get Pro, or You → Go Pro. Restore purchases is on that screen.
+
+What Pro unlocks: unlimited Crews (Free cap 5), schedule Sparks (Free cannot schedule), Pro badge.
+
+Account deletion: You → Delete account.
+
+Flows to spot-check:
+1. Create a Crew (or join with an invite code)
+2. Start a Spark from Home — it appears under Live Sparks
+3. Post a photo on a fire, comment, crew chat
+4. Optional: Get Pro sandbox purchase
+
+Contact: dhilan.saluja@gmail.com
+
+============================================================
+8) CONTACT / DEMO
+============================================================
+First name: Dhilan
+Last name: Saluja
+Phone: (your number)
+Email: dhilan.saluja@gmail.com
+Sign-in required: Yes
+Demo account: not needed — Sign in with Apple
+Notes: see section 7
+
+============================================================
+9) IN-APP PURCHASES (must be attached to version 1.0.0)
+============================================================
+Monthly: bonfire.pro.monthly — $1.99 USD (or App Store localized price), auto-renew
+Yearly: bonfire_pro_yearly — $19.99 USD, auto-renew
+
+Display names (examples):
+• Bonfyr Pro Monthly
+• Bonfyr Pro Yearly
+
+Description:
+Unlimited Crews, schedule Sparks up to 24 hours ahead, and a Pro badge.
+
+Review screenshot: Subscription screen showing both plans.
+
+============================================================
+10) SCREENSHOTS (required)
+============================================================
+iPhone 6.7" (or latest required size) + iPad 13" if tablet is on (supportsTablet is true).
+Required: iPhone 6.9" (1320x2868) + iPad 13" (2064x2752). Apple scales the rest.
+Full-bleed app UI with promo text ON the image (top caption). No status bar, no device frame, no letterbox poster, no login, no prices, no third-party memes.
+Do not upload Bonfire-SignIn-*.png.
+Upload in Media Manager → View All Sizes. Easiest folder: store/app-store-upload
+Required: iPhone 6.9 (APP_IPHONE_69) + iPad 13 (APP_IPAD_PRO_3GEN_129)
+Also replace 6.5 / 6.7 if those slots still show old images.
+
+============================================================
+11) BEFORE YOU TAP SUBMIT
+============================================================
+[ ] Latest build selected on version 1.0.0
+[ ] Both IAPs attached to the version
+[ ] Paid Apps agreement + tax/bank completed (needed for IAP review)
+[ ] Public https Privacy Policy URL filled in
+[ ] Support URL (can be a simple page or mailto is not enough — use a page or GitHub/site)
+[ ] Age rating completed
+[ ] Export compliance: ITSAppUsesNonExemptEncryption is already false in the app — answer No to encryption exemptions
+[ ] Advertising Identifier: No
+[ ] Screenshots uploaded for iPhone and iPad

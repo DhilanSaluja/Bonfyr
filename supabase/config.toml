@@ -1,0 +1,55 @@
+# A new Flutter project.
+# This project uses Supabase for backend.
+
+project_id = "bonfire"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323
+
+[auth]
+enabled = true
+site_url = "bonfire://"
+additional_redirect_urls = ["bonfire://**"]
+jwt_expiry = 3600
+enable_signup = true
+
+[auth.sms]
+enable_signup = true
+enable_confirmations = true
+
+[functions.expire-opens]
+verify_jwt = false
+
+[functions.notify-open-created]
+verify_jwt = false
+
+[functions.notify-crew-activity]
+verify_jwt = false
+
+[functions.verify-google-purchase]
+verify_jwt = true
+
+[functions.verify-apple-purchase]
+verify_jwt = true
+
+[functions.delete-account]
+verify_jwt = true
+
+[functions.legal]
+verify_jwt = false
+
+[functions.join]
+verify_jwt = false

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join a Crew — Bonfyr</title>
+  <meta http-equiv="refresh" content="0;url=https://nszrdmnteckgukyobzfp.supabase.co/functions/v1/join" />
+  <script>
+    (function () {
+      var parts = location.pathname.split('/').filter(Boolean);
+      var token = parts[parts.length - 1] || '';
+      if (token.toLowerCase() === 'join') token = '';
+      var q = location.search || '';
+      var dest = 'https://nszrdmnteckgukyobzfp.supabase.co/functions/v1/join' +
+        (token ? '/' + encodeURIComponent(token) : '') + q;
+      location.replace(dest);
+    })();
+  </script>
+</head>
+<body>
+  <p>Opening your Bonfyr invite…</p>
+</body>
+</html>

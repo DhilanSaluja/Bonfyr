@@ -1,0 +1,56 @@
+{
+  "configVersion": 0,
+  "apple": {
+    "version": "1.0",
+    "release": {
+      "automaticRelease": true
+    },
+    "info": {
+      "en-US": {
+        "title": "Bonfyr: Friends > Followers",
+        "screenshots": {
+          "APP_IPHONE_65": [
+            "store\\apple\\screenshot\\en-US\\APP_IPHONE_65\\Bonfire-SignIn-1284x2778.png",
+            "store\\apple\\screenshot\\en-US\\APP_IPHONE_65\\Bonfire-Home-Week-1284x2778.png",
+            "store\\apple\\screenshot\\en-US\\APP_IPHONE_65\\Bonfire-Crew-Fire-1284x2778.png",
+            "store\\apple\\screenshot\\en-US\\APP_IPHONE_65\\Bonfire-Crew-Chat-1284x2778.png",
+            "store\\apple\\screenshot\\en-US\\APP_IPHONE_65\\Bonfire-Home-Out-1284x2778.png"
+          ]
+        }
+      }
+    },
+    "categories": [
+      "SOCIAL_NETWORKING",
+      "PRODUCTIVITY"
+    ],
+    "advisory": {
+      "ageRatingOverride": "NONE",
+      "alcoholTobaccoOrDrugUseOrReferences": "NONE",
+      "contests": "NONE",
+      "gambling": false,
+      "gamblingSimulated": "NONE",
+      "horrorOrFearThemes": "NONE",
+      "kidsAgeBand": null,
+      "koreaAgeRatingOverride": "NONE",
+      "lootBox": false,
+      "matureOrSuggestiveThemes": "NONE",
+      "medicalOrTreatmentInformation": "NONE",
+      "profanityOrCrudeHumor": "NONE",
+      "sexualContentGraphicAndNudity": "NONE",
+      "sexualContentOrNudity": "NONE",
+      "unrestrictedWebAccess": false,
+      "violenceCartoonOrFantasy": "NONE",
+      "violenceRealistic": "NONE",
+      "violenceRealisticProlongedGraphicOrSadistic": "NONE",
+      "advertising": false,
+      "ageAssurance": false,
+      "ageRatingOverrideV2": "NONE",
+      "developerAgeRatingInfoUrl": null,
+      "gunsOrOtherWeapons": "NONE",
+      "healthOrWellnessTopics": false,
+      "messagingAndChat": true,
+      "parentalControls": false,
+      "userGeneratedContent": true
+    }
+  }
+}

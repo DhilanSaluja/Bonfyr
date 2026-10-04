@@ -1,0 +1,12 @@
+<!--
+  Paste this into Supabase Dashboard → Authentication → Email Templates → Magic Link
+
+  Subject: Your Bonfyr login code
+
+  Why: signInWithOtp uses this template. If it contains {{ .ConfirmationURL }},
+  users get a link. Using {{ .Token }} sends a 6-digit code for the app verify screen.
+-->
+<h2>Your Bonfyr login code</h2>
+<p>Enter this code in the app to sign in:</p>
+<p style="font-size: 28px; letter-spacing: 6px; font-weight: 700;">{{ .Token }}</p>
+<p>This code expires in 1 hour. If you didn’t request it, you can ignore this email.</p>

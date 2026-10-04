@@ -1,0 +1,102 @@
+{
+  "configVersion": 0,
+  "apple": {
+    "version": "1.0.1",
+    "copyright": "2026 Dhilan Saluja",
+    "categories": ["SOCIAL_NETWORKING", "LIFESTYLE"],
+    "advisory": {
+      "ageRatingOverride": "NONE",
+      "alcoholTobaccoOrDrugUseOrReferences": "NONE",
+      "contests": "NONE",
+      "gambling": false,
+      "gamblingSimulated": "NONE",
+      "horrorOrFearThemes": "NONE",
+      "kidsAgeBand": null,
+      "koreaAgeRatingOverride": "NONE",
+      "lootBox": false,
+      "matureOrSuggestiveThemes": "INFREQUENT_OR_MILD",
+      "medicalOrTreatmentInformation": "NONE",
+      "profanityOrCrudeHumor": "NONE",
+      "sexualContentGraphicAndNudity": "NONE",
+      "sexualContentOrNudity": "NONE",
+      "unrestrictedWebAccess": false,
+      "violenceCartoonOrFantasy": "NONE",
+      "violenceRealistic": "NONE",
+      "violenceRealisticProlongedGraphicOrSadistic": "NONE",
+      "advertising": false,
+      "ageAssurance": false,
+      "ageRatingOverrideV2": "NONE",
+      "developerAgeRatingInfoUrl": null,
+      "gunsOrOtherWeapons": "NONE",
+      "healthOrWellnessTopics": false,
+      "messagingAndChat": true,
+      "parentalControls": false,
+      "userGeneratedContent": true
+    },
+    "info": {
+      "en-US": {
+        "title": "Bonfyr",
+        "subtitle": "Keep your crew together",
+        "description": "Bonfyr is THE app that keeps you and your friends together.\n\nEvery 24 hours, someone in your crew has to post a picture or video, chat, or start a Spark (a hangout that actually happens in real life). If nobody kindles, the fire goes out. That’s the point — it stays about right now, not a feed you never catch up on.\n\nStart a Spark when you want to do something. Your crews get pinged so people can jump in. Keep the fire lit with photos, short videos, and chat that burn out after a day.\n\nFree\n• Create crews and invite friends with a code\n• Start Sparks that go live now\n• Photos, videos, GIFs, polls, and crew chat\n• Find friends already on Bonfyr from your contacts\n\nBonfyr Pro (auto-renewable, $1.99/mo or $19.99/yr)\n• Unlimited crews (Free is capped at 5)\n• Schedule Sparks up to 24 hours ahead\n• Pro badge on your profile\n\nSign in with Apple or Google. No public discovery feed — you only see people in your crews.\n\nPrivacy Policy: https://bonfireconnect.netlify.app/\nTerms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nCustom Terms of Use: https://bonfireconnect.netlify.app/terms.html\n\nPrivacy Policy and Terms are also in the app under You → Privacy / Terms. Delete your account anytime under You → Delete account.",
+        "keywords": [
+          "friends",
+          "hangout",
+          "hangouts",
+          "plans",
+          "meetup",
+          "group chat",
+          "photos",
+          "video",
+          "chat",
+          "invite",
+          "spark",
+          "private",
+          "groups",
+          "irl"
+        ],
+        "releaseNotes": "Welcome to Bonfyr. Light a Spark, keep your crew fire going, and hang out in real life.",
+        "promoText": "Light a Spark, pull your friends together, and keep the crew fire burning with photos and chat that fade after a day.",
+        "supportUrl": "https://bonfireconnect.netlify.app/support.html",
+        "privacyPolicyUrl": "https://bonfireconnect.netlify.app/",
+        "privacyChoicesUrl": "https://bonfireconnect.netlify.app/",
+        "screenshots": {
+          "APP_IPHONE_65": [
+            "./store/apple/screenshot/en-US/APP_IPHONE_65/Bonfire-Home-Week-1284x2778.png",
+            "./store/apple/screenshot/en-US/APP_IPHONE_65/Bonfire-Home-Out-1284x2778.png",
+            "./store/apple/screenshot/en-US/APP_IPHONE_65/Bonfire-Crew-Chat-1284x2778.png",
+            "./store/apple/screenshot/en-US/APP_IPHONE_65/Bonfire-Crew-Fire-1284x2778.png"
+          ],
+          "APP_IPHONE_67": [
+            "./store/apple/screenshot/en-US/APP_IPHONE_67/Bonfire-Home-Week-1290x2796.png",
+            "./store/apple/screenshot/en-US/APP_IPHONE_67/Bonfire-Home-Out-1290x2796.png",
+            "./store/apple/screenshot/en-US/APP_IPHONE_67/Bonfire-Crew-Chat-1290x2796.png",
+            "./store/apple/screenshot/en-US/APP_IPHONE_67/Bonfire-Crew-Fire-1290x2796.png"
+          ],
+          "APP_IPHONE_69": [
+            "./store/apple/screenshot/en-US/APP_IPHONE_69/Bonfire-Home-Week-1320x2868.png",
+            "./store/apple/screenshot/en-US/APP_IPHONE_69/Bonfire-Home-Out-1320x2868.png",
+            "./store/apple/screenshot/en-US/APP_IPHONE_69/Bonfire-Crew-Chat-1320x2868.png",
+            "./store/apple/screenshot/en-US/APP_IPHONE_69/Bonfire-Crew-Fire-1320x2868.png"
+          ],
+          "APP_IPAD_PRO_3GEN_129": [
+            "./store/apple/screenshot/en-US/APP_IPAD_PRO_3GEN_129/01-home-2064x2752.png",
+            "./store/apple/screenshot/en-US/APP_IPAD_PRO_3GEN_129/02-crew-2064x2752.png",
+            "./store/apple/screenshot/en-US/APP_IPAD_PRO_3GEN_129/03-start-spark-2064x2752.png",
+            "./store/apple/screenshot/en-US/APP_IPAD_PRO_3GEN_129/04-you-2064x2752.png"
+          ]
+        }
+      }
+    },
+    "release": {
+      "automaticRelease": false
+    },
+    "review": {
+      "firstName": "Dhilan",
+      "lastName": "Saluja",
+      "email": "dhilan.saluja@gmail.com",
+      "phone": "++1-555-0014",
+      "demoRequired": false,
+      "notes": "Sign in: no username/password. Use Sign in with Apple (preferred).\n\nSign in with Apple uses the name and email from Authentication Services. The app does not ask you to type those again.\n\n1. Launch Bonfyr → Sign in\n2. Tap Sign in with Apple\n3. Hide My Email is fine\n4. On the optional setup screen, tap Continue. Photo and phone are optional.\n5. Contacts, location, and notifications are requested later only if you use those features. Deny is fine — the app still works.\n\nAny new Apple ID can create a fresh profile. No demo password.\n\nSubscriptions attached to this version:\n• bonfire.pro.monthly\n• bonfire_pro_yearly\nFind them: Home → Get Pro, or You → Go Pro. Restore purchases is on that screen.\n\nWhat Pro unlocks: unlimited Crews (Free cap 5), schedule Sparks (Free cannot schedule), Pro badge.\n\nAccount deletion: You → Delete account.\n\nFlows to spot-check:\n1. Create a Crew (or join with an invite code)\n2. Start a Spark from Home — it appears under Live Sparks\n3. Post a photo on a fire, comment, crew chat\n4. Optional: Get Pro sandbox purchase\n\nThis build was tested on iPhone and iPad, including iPad Air.\n\nContact: dhilan.saluja@gmail.com"
+    }
+  }
+}
